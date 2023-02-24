@@ -7,15 +7,7 @@ const objects = [
 ];
 
 function filterBlueObjects(objects){
-
-    let filteredObjects = [];
-
-    for(let i = 0; i < objects.length; i++){
-        if(objects[i].color == "blue")
-            filteredObjects.push(objects[i])
-    }
-    
-    return filteredObjects;
+    return objects.filter(object => object.color == "blue")
 }
 
 const blueObjects = filterBlueObjects(objects);
