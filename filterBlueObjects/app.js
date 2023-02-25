@@ -6,9 +6,5 @@ const objects = [
     {name: "Olovka", color: "pink"}
 ];
 
-function filterBlueObjects(objects){
-    return objects.filter(object => object.color == "blue")
-}
-
-const blueObjects = filterBlueObjects(objects);
+const blueObjects = objects.filter(object => object.color == "blue" );
 console.log(blueObjects);
