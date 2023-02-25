@@ -8,6 +8,7 @@ const crveniPassportVideo = document.querySelector(".crveniPassportVideo");
 const kriminalVideo = document.querySelector(".kriminalVideo");
 const cenerVideo = document.querySelector(".cenerVideo");
 
+// resets the visibility
 function clearScreen(){
     crveniPassportVideo.style.visibility = "hidden";
     cenerVideo.style.visibility = "hidden";
@@ -29,6 +30,7 @@ function showKriminal(){
     kriminalVideo.style.visibility = "visible";
 }
 
+// shows video embed when clicked on text element
 crveniPassport.addEventListener('click', showCrveniPassport)
 kriminal.addEventListener('click', showKriminal)
 cener.addEventListener('click', showCener)
