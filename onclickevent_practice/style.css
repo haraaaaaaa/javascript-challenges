@@ -1,16 +1,39 @@
-.crveniPassportVideo{
-    width: 400px;
-    height: 225px;
-    margin-top: 150px;
-    margin-left: 10px;
-    vertical-align: middle;
-}
-
-.container{
+.container-text{
     display: flex;
 }
 
-.container > * {
+.container-text > * {
     width: calc(100% / 3);
     padding: 1rem;
+}
+
+.container-video{
+    display: flex;
+}
+
+.container-video > * {
+    width: calc(100% / 3);
+    padding: 1rem;
+}
+
+.crveniPassportVideo{
+    width: 400px;
+    height: 225px;
+    margin-top: 100px;
+    margin-left: 100px;
+    vertical-align: middle;
+}
+
+.cenerVideo{
+    width: 400px;
+    height: 225px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.kriminalVideo{
+    width: 400px;
+    height: 225px;
+    margin-top: 100px;
+    margin-left: 100px;
 }
