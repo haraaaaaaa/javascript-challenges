@@ -1,0 +1,16 @@
+.crveniPassportVideo{
+    width: 400px;
+    height: 225px;
+    margin-top: 150px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.container{
+    display: flex;
+}
+
+.container > * {
+    width: calc(100% / 3);
+    padding: 1rem;
+}
