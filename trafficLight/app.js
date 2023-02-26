@@ -1,34 +1,26 @@
-const trafficLight = document.getElementsByClassName("trafficLight");
+const trafficLight = document.querySelector(".trafficLight");
 
 // light bulb elements
 const redLight = document.getElementById("redLight");
 const yellowLight = document.getElementById("yellowLight");
 const greenLight = document.getElementById("greenLight");
 
-// resets the lights 
-function clearLights(){
-    redLight.style.backgroundColor = "black";
-    yellowLight.style.backgroundColor = "black";
-    greenLight.style.backgroundColor = "black";
-}
+let currentColor = "red";
 
-function glowRed(){
-    clearLights();
-    redLight.style.backgroundColor = "red";
-}
-
-function glowYellow(){
-    clearLights();
-    yellowLight.style.backgroundColor = "yellow";
-}
-
-function glowGreen(){
-    clearLights();
-    greenLight.style.backgroundColor = "green";
-}
-
-function changeColors(){
-    glowRed();
-    glowYellow();
-    glowGreen();
-}
+trafficLight.addEventListener('click', () => {
+    if(currentColor === "red"){
+        redLight.style.backgroundColor = "black"
+        yellowLight.style.backgroundColor = "yellow"
+        currentColor = "yellow"
+    }
+    else if(currentColor === "yellow"){
+        yellowLight.style.backgroundColor = "black"
+        greenLight.style.backgroundColor = "green"
+        currentColor = "green"
+    }
+    else{
+        greenLight.style.backgroundColor = "black"
+        redLight.style.backgroundColor = "red"
+        currentColor = "red"
+    }
+})
